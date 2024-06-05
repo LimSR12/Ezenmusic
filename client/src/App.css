@@ -1,0 +1,583 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    /* color setting */
+    --main-background-white: #ffffff;
+    --main-background-black: #000000;
+
+    --main-text-white: #ffffff;
+    --main-text-black: #000000;
+    --main-text-gray: #7e7e7e;
+    --main-text-gray-lighter: #afafaf; 
+    --main-text-gray-darker: #333333;
+    --modal-text-black: #181818;
+
+    /* 건우 */
+    --mylist-null-image-cover: #f8f9fa;
+    --mylist-null-image-before: #e3e3e3;
+    --mylist-null-image-after: #f3f3f3;
+
+    --modal-text-black: #181818;
+    --modal-text-white-darker: hsla(0,0%,100%,.75);
+    --modal-background-color: #576aff;
+    /* ~ 건우 ~ */
+
+    --pagination-dot: #3f3fff;
+    --main-theme-color: #3f3fff;
+    --main-theme-color-hover: #3030C7;
+    --kakao-theme-color: #FEE500;
+    --purchase-box-color: #f4f5f8;
+    --disabled-button-color: #e1e3e7;
+    --signup-invalid-color: #ff4d78;
+    --color-deep-blue: #0000b6;
+    --red-color: #db2359;
+    /* size setting */
+    --font-size: 18px;
+    
+    /* --swiper-navigation-size: 12px; */
+
+}
+/************* Default CSS settings *************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+body{
+    width: 100%;
+    height:100%;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    /* tailwindcss 기준 'md' : 768px 이하로 줄어들지 않도록 */
+    /* 하려고 했지만 780px로 ㄱㄱ */
+    /* 하려고 했지만 tailwind 따라가는게 맞는듯 */
+    min-width: 768px;
+    
+}
+body, body>div{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+p, a, ul, li, button{
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+button{
+    border: 0;
+    background-color: transparent;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+body::-webkit-scrollbar, div::-webkit-scrollbar{
+    /* display: block; */
+    /* color: rgb(36, 36, 36); */
+}
+input[type='radio'] {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none; 
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--main-text-gray); 
+    border-radius: 50%;
+    outline: none; 
+    cursor: pointer;
+}
+input[type='radio']:checked {
+    background-color: var(--main-theme-color); 
+    border: 3px solid var(--main-background-white);
+    box-shadow: 0 0 0 1px var(--main-text-gray); 
+}
+
+
+
+
+/************* Settings for Responsible *************/
+
+
+
+/* 병준 */
+.text-blue{ color: var(--main-theme-color); }
+.hover-text-blue:hover{ color: var(--main-theme-color); }
+.bg-blue{ background-color: var(--main-theme-color); }
+.hover-bg-blue:hover{ background-color: var(--main-theme-color); }
+.border-blue{ border-color: var(--main-theme-color); }
+.hover-border-blue:hover{ border-color: var(--main-theme-color); }
+
+.text-deepblue{ color: var(--color-deep-blue); }
+.hover-text-deepblue:hover{ color: var(--color-deep-blue); }
+.bg-deepblue{ background-color: var(--color-deep-blue); }
+.hover-bg-deepblue:hover{ background-color: var(--color-deep-blue); }
+.border-deepblue{ border-color: var(--color-deep-blue); }
+.hover-border-deepblue:hover{ border-color: var(--color-deep-blue); }
+
+
+.text-pink{ color: var(--signup-invalid-color); }
+.hover-text-pink:hover{ color: var(--signup-invalid-color); }
+.bg-pink{ background-color: var(--signup-invalid-color); }
+.hover-bg-pink:hover{ background-color: var(--signup-invalid-color); }
+
+
+.text-gray-light{ color: var(--main-text-gray-lighter);}
+.hover-text-gray-light:hover{ color: var(--main-text-gray-lighter);}
+.bg-gray-light{ background-color: var(--main-text-gray-lighter);}
+.hover-bg-gray-light:hover{ background-color: var(--main-text-gray-lighter);}
+.border-gray-light{ border-color: var(--main-text-gray-lighter); }
+
+.text-gray{ color: var(--main-text-gray);}
+.hover-text-gray:hover{ color: var(--main-text-gray);}
+.bg-gray{ background-color: var(--main-text-gray);}
+.hover-bg-gray:hover{ background-color: var(--main-text-gray);}
+.border-gray{ border-color: var(--main-text-gray);}
+.hover-border-gray:hover{ border-color: var(--main-text-gray);}
+
+
+
+.text-gray-dark{ color: var(--main-text-gray-darker);}
+.hover-text-gray-dark:hover{ color: var(--main-text-gray-darker);}
+.bg-gray-dark{ background-color: var(--main-text-gray-darkery);}
+.hover-bg-gray-dark:hover{ background-color: var(--main-text-gray-darker);}
+.border-gray-dark{ border-color: var(--main-text-gray-darker);}
+.hover-border-gray-dark:hover{ border-color: var(---main-text-gray-darker);}
+
+.M-img-border{ border-color: var(--mylist-null-image-before); }
+/* ~ 병준 ~ */
+
+
+/* 재호 */
+
+
+/****************************************************************************************\
+
+/*캐릭터쪽 아이콘*/
+.check_icons{
+    position: absolute;
+    background-position: -194px -516px;
+    width: 17px;
+    height: 17px;
+    z-index: 3;
+}
+.plus_icons{
+    display: inline-block;
+    background-position: -303px -663px;
+    width: 20px;
+    height: 20px;
+    content: "";
+}
+.arrow_icons{
+    background-position: -362px -691px;
+    width: 13px;
+    height: 13px;
+    content: "";
+}
+.pensel_icons{
+    background-position: -597px -315px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.pensel_icons:hover{
+    background-position: -597px -280px;
+    width: 30px;
+    height: 30px;
+}
+.camera_icons{
+    background-position: -440px -472px;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+}
+.camera_icons:hover{
+    background-position: -399px -472px;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+
+}
+/*작성글 취소*/
+.cancel_icons{
+    background-position: -632px -280px;
+    width: 29px;
+    height: 29px;
+    overflow: hidden;
+}
+
+/*cancel 클릭시 아이콘*/
+.cancel_icons2{
+    background-position: -630px -314px;
+    width: 29px;
+    height: 29px;
+    overflow: hidden;
+}
+/***/
+.play_start_btn{
+    background-position: -233px -340px;
+    width: 32px;
+    height: 32px;
+}
+
+/*전체 체크시 아이콘*/
+.menu_check{
+    background-position: -558px -78px;
+    width: 34px;
+    height: 34px;
+}
+.menu_addlisten{
+    background-position: -558px -390px;
+    width: 34px;
+    height: 34px;
+}
+.menu_addlist{
+    background-position: -558px -507px;
+    width: 34px;
+    height: 34px;
+}
+.menu_addbox{
+    background-position: -558px -273px;
+    width: 34px;
+    height: 34px;
+}
+
+/*******************************************************/
+/* 보관함 좋아요 하트*/
+.iconsheart3{
+    background-position: -697px -482px;
+    width: 16px;
+    height: 16px;
+}
+.iconsheart3:hover{
+    background-position: -697px -503px;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+/******************/
+
+/* .artist_track_order{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.artist_track_order:hover{
+    color: var(--main-theme-color);
+}
+.artist_track_order::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.All_listen_head{
+    position: relative;
+    min-height: 20px;
+    padding-bottom: 16px;
+}
+.All_listen{
+    background-position: 3px -18px;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-left: 17px;
+    margin: 0 15px 10px 0px;
+    font-size: 13px;
+    line-height: 17px;
+    color: #222;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.All_listen:hover{
+    background-position: 3px 4px;
+    color: var(--main-theme-color);
+    vertical-align: middle;
+}
+.All_listen:after{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+} */
+/*************
+Artist Music List 아이콘
+.artist_listen 재생(듣기) 버튼
+.artist_listplus 재생목록 추가
+.artist_box 내 리스트 추가
+.redheart 큰 좋아요 아이콘
+.redheart2 작은 좋아요 아이콘
+***************/
+.redheart{
+    background-position: -421px -230px;
+    width: 41px;
+    height: 41px;
+}
+.redheart2{
+    background-position: -392px -324px;
+    width: 23px;
+    height: 23px;
+}
+.artist_listen{
+    background-position: -467px -92px;
+    width: 41px;
+    height: 41px;
+}
+.artist_listen:hover{
+    background-position: -467px -46px;
+    width: 41px;
+    height: 41px;
+}
+.artist_listplus{
+    background-position: -467px -230px;
+    width: 41px;
+    height: 41px;
+}
+.artist_listplus:hover{
+    background-position: -467px -184px;
+    width: 41px;
+    height: 41px;
+}
+.see_more{
+    background-position: -184px -380px;
+    width: 41px;
+    height: 41px;
+   }
+   .see_more:hover{
+    background-position: -138px -380px;
+    width: 41px;
+    height: 41px;
+   }
+   .artist_box{
+       background-position: -368px -380px;
+       width: 41px;
+       height: 41px;
+   }
+   .artist_box:hover{
+       background-position: -322px -380px;
+       width: 41px;
+       height: 41px;
+   }
+/******************************************/
+.detail-title{
+    font-weight: bold;
+}
+.search_main{
+    width: 100%;
+    padding: 10px 80px 0;
+    min-width: 955px;
+    max-width: 1600px;
+    padding: 0 80px 0;
+}
+.search_track{
+    width: 1600px;
+    margin-left: -80px;
+    margin-right: -80px;
+}
+
+.search_list{
+    width: 100%;
+    padding: 10px 80px 0;
+    min-width: 955px;
+    max-width: 1600px;
+    padding: 0 0px 50px;
+
+}
+
+.artist_main{
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 50px;
+    table-layout: fixed;
+}
+.artist_main_list{
+    padding: 0 100px 30px ;
+}
+.artist_menu{
+    height: 43px;
+    padding-right: 0px;
+    overflow: hidden;
+    padding-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 230px;
+    @media screen  and (max-width: 1600px){
+        margin-left: 80px;
+    }
+
+}
+.artist_info{
+    margin: 60px 30px;
+}
+.artist_info_list{
+    position: relative;
+    font-size: 15px;
+    color: #333;
+}
+.music_list_main{
+    padding: 95px 80px 40px;
+}
+.artist_menu_list{
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0 auto;
+
+}
+.artist_name{
+    color: var(--main-theme-color);
+}
+.artist_track_main{
+    padding-top: 40px;
+}
+.Imgbox{
+    position: relative;
+}
+.Imgbox>img:hover{ 
+    position: relative;
+}
+.libutton{
+    right: 11px;
+    bottom: 15px;
+    background-position: -180px -105px;
+    width: 37px;
+    height: 37px;
+    color:transparent
+}
+.libutton:hover{
+    background-position: -143px -105px;
+}
+.iconsbox{
+    background-position: 0px -663px;
+    width: 23px;
+    height: 23px;
+}
+.iconsbox:hover{
+    background-position: -392px -352px;
+}
+.iconsstart{
+    top: 160px;
+    width: 60px;
+    height: 60px;
+    background-position: -65px -143px;
+    border-radius: 175px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.iconsstart:hover{
+    background-position: -0px -143px;
+    }
+    .libutton{
+    position: absolute;
+    z-index: 3;
+    overflow: hidden;
+    }
+.iconslistplus{
+    width: 23px;
+    height: 23px;
+    background-position: -196px -663px;
+}
+.iconslistplus:hover{
+    width: 23px;
+    height: 23px;
+    background-position: -56px -663px;
+}
+.iconsheart{
+    width: 41px;
+    height: 41px;
+    overflow: hidden;
+    text-indent: 100%;
+    background-position: -421px -138px;
+    white-space: middle;
+    color: var(--main-text-gray-lighter);
+}
+.iconsheart2{
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    background-position: -336px -268px;
+    white-space: middle;
+    color: var(--main-text-gray-lighter);
+}
+.iconsheart2:hover{
+    background-position: -276px -180px;
+    width: 23px;
+    height: 23px;
+}
+.iconsheart:hover{
+    background-position: -421px -92px;
+    width: 41px;
+    height: 41px;
+}
+.activeoff:hover{
+    color:var(--main-theme-color);
+}
+.artist_Album{
+    display: block;
+    font-size: 100%;
+    font-weight: 400;
+    color:#333;
+}
+.artist_Album_track{
+    padding-left: 235xpx;
+    position: relative;
+    display: block;
+}
+.artist_Album_bener{
+    font-size: 13px;
+    position: absolute;
+    right: 215px;
+    color:#333;
+    z-index: 1;
+}
+
+.artist_Album_benerafter{
+    position: relative;
+    min-height:20px ;
+    padding-bottom: 16px;
+}
+.artist_Album_benerafter::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.artist_Album_div{
+    position: relative;
+    min-height: 20px;
+    padding-bottom: 16px;
+}
+
+
+/* ~ 재호 ~ */
+
+
+
+

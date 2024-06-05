@@ -1,0 +1,64 @@
+<!--
+    num : 아티스트 넘버
+    class :그룹/싱글
+    singer: 아티스트 이름
+    gender:성별 
+    genre:장르
+-->
+{% extends "layout.html" %}
+
+{% block content %}
+{% block style %}
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- <link rel="stylesheet" href="css/client.css"> -->
+{% endblock %}
+<!--bootstrap table layout-->
+<div class="container">
+    <h1>{{title}}</h1>
+    <div class="d-flex justify-content-end my-5">
+        <a href="/" class="btn btn-primary mx-2">Home</a>
+        <a href="/artist/artist_write" class="btn btn-success">Artist create</a>
+     </div>
+</div>
+<form action="/artist" method="POST"  class="row">
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">원본이미지</th>
+            <th scope="col">이미지</th>
+            <th scope="col">artist</th>
+            <th scope="col">class</th>
+            <th scope="col">gender</th>
+            <th scope="col">genre</th>
+            <th scope="col">수정</th>
+            <th scope="col">삭제</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for rs in row %}
+        <tr class="table">    
+                <td id="artist_num">{{rs.artist_id}}</td>
+                <td>{{rs.org_artist_image}}</td>
+                <td><image src="/image/artist/{{rs.artist_image}}" alt="artist_image" class="M-album-image"></td>
+                <td>{{rs.artist_name}}</td>
+                <td>{{rs.artist_class}}</td>
+                <td>{{rs.artist_gender}}</td>
+                <td>{{rs.genre}}</td>
+                <td><a href="/artist/artist_edit/{{rs.artist_id}}" class="btn btn-info">수정</a></td>
+                <td><button type="submit" class="btn btn-danger">삭제</button></td>
+        </tr>
+        <input type="hidden" id="artist_id" name="artist_id" value="{{rs.artist_id}}"/>
+        {% endfor %}
+    </tbody>
+</table>
+</form>
+</div>
+
+<!--bootstrap table layout-->
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
