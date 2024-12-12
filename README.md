@@ -1,14 +1,16 @@
->#  EZEN MUSIC
->
->EZEN ACADEMY fullstack 반 team project
->
->React + NodeJS 기반으로 한 음악 스트리밍 웹 페이지
+# 🎵 Music Streaming Website - EZEN MUSIC 
+> **A Full-Stack Music Streaming Web Application**  
+> Built with **React**, **Express**, and **MySQL**
 
+![Preview Image](https://via.placeholder.com/800x400?text=Project+Preview)  
+*(프로젝트 스크린샷이나 주요 UI 화면 이미지를 여기에 추가하세요.)*
 <br>
 
-## 프로젝트 소개
+## 📖 About the Project  
 
 FLO 라는 음악 스트리밍 웹 사이트 를 클론 코딩 한 프로젝트 입니다.
+
+### 🔥 Key Features  
 
 <br>
 
@@ -16,10 +18,17 @@ FLO 라는 음악 스트리밍 웹 사이트 를 클론 코딩 한 프로젝트 
 
 - 23.11.07. ~ 23.12.22.
 
-<br>
 
-## 사용언어
+---
+## ⚙️ Tech Stack  
 
+| **Technology**      | **Purpose**              |  
+|----------------------|--------------------------|  
+| **React**            | Frontend UI Framework    |  
+| **Express.js**       | Backend API Framework    |  
+| **MySQL**            | Database Management      |  
+| **Node.js**          | Server Environment       |  
+---
 <div>
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
