@@ -3,7 +3,7 @@
 > Built with **React**, **Express**, and **MySQL**
 
 ![Preview Image](https://via.placeholder.com/800x400?text=Project+Preview)  
-*(프로젝트 스크린샷이나 주요 UI 화면 이미지를 여기에 추가하세요.)*
+
 <br>
 
 ## 📖 About the Project  
