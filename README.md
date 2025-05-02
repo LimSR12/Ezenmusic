@@ -1,66 +1,80 @@
-# 🎵 Music Streaming Website - EZEN MUSIC 
-> **A Full-Stack Music Streaming Web Application**  
-> Built with **React**, **Express**, and **MySQL**
+# 🎵 EZEN MUSIC 
+> 이젠아카데미-[디지털컨버전스]풀스택 개발자 과정 수료 프로젝트
+> 개발 기간 : 23.11.07. ~ 23.12.22.
+## 👩‍👩‍👦‍👦 구성원
+> - 민병준(팀장)
+> - 임승렬
+> - 김건우
+> - 이재호
+<br>
 
-![Preview Image](https://via.placeholder.com/800x400?text=Project+Preview)  
+## 📖 프로젝트 소개
+
+음악 스트리밍 서비스를 구현한 포트폴리오 프로젝트 입니다.
+
+저작권 등의 문제로 실제 음원이 재생되지 않습니다.
+
+디자인은 음악 스트리밍 앱 FLO 의 디자인을 클론코딩 하였습니다.
+
+<table>
+  <tr>
+    <th>메인 페이지</th>
+    <th>인기 차트</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/3391924a-6eec-4e3e-9050-5ae19dedc317" width="100%" style="max-width:400px;"><br>
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/b3171a7e-1cef-4f1e-8b88-39ffae49bbf5" width="100%" style="max-width:400px;"><br>
+    </td>
+  </tr>
+  <tr>
+    <th>사용자별 캐릭터 마이페이지</th>
+    <th>아티스트 취향 선택 페이지</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/47781950-6060-4435-a0c4-a26002013b05" width="100%" style="max-width:400px;"><br>
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/7ec5abf9-964e-4e01-944e-5d1dee857386" width="100%" style="max-width:400px;"><br>
+    </td>
+  </tr>
+  <tr>
+    <th>장르 취향 선택 페이지</th>
+    <th>취향 선택 후 메인 페이지</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/ff34949f-1334-4338-9019-df849f4d3579" width="100%" style="max-width:400px;"><br>
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/42ea8aa8-7aed-4961-ad30-0dacbfb8e111" width="100%" style="max-width:400px;"><br>
+    </td>
+  </tr>
+</table>
 
 <br>
 
-## 📖 About the Project  
-
-FLO 라는 음악 스트리밍 웹 사이트 를 클론 코딩 한 프로젝트 입니다.
-
-### 🔥 Key Features  
-
-<br>
-
-## ⏰ 개발 기간
-
-- 23.11.07. ~ 23.12.22.
-
-
 ---
-## ⚙️ Tech Stack  
+## ⚙️ 기술 스택  
 
-| **Technology**      | **Purpose**              |  
-|----------------------|--------------------------|  
-| **React**            | Frontend UI Framework    |  
-| **Express.js**       | Backend API Framework    |  
-| **MySQL**            | Database Management      |  
-| **Node.js**          | Server Environment       |  
----
 <div>
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=Express&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black"/>
+<img src="https://img.shields.io/badge/mysql8.0.33-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/aws-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white">
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+<br><br>
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
 <img src="https://img.shields.io/badge/bootstrap5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
-<img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=for-the-badge&logo=Tailwind CSS&logoColor=white">
 </div>
 
-<br>
-
-## 개발 환경
-
-<div>
-<img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black"/>
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"/>
-<img src="https://img.shields.io/badge/mysql8.0.33-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-<img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=Express&logoColor=white"/>
-  
-<br><br>
-<img src="https://img.shields.io/badge/aws-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white">
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-</div>
-
-<br>
-
-## 👩‍👩‍👦‍👦 구성원
-- 민병준(팀장)
-- 이재호
-- 김건우
-- 임승렬
 <br>
 
 ## 📌 주요 기능
@@ -73,43 +87,68 @@ FLO 라는 음악 스트리밍 웹 사이트 를 클론 코딩 한 프로젝트 
   - 테스트 계정 ID: root PW: root123!
   - 관리자 페이지
     - 3.38.16.62:8081
-    - 관리자 계정 ID: ezenmusic PW: flodb64cc!!
+    - 관리자 계정 테스트 ID: ezenmusic PW: flodb64cc!!
 <br>
 
 ## 📚 팀원 별 담당 파트 소개
-#### [민병준(팀장)]
-+ 관리자 페이지
-  + 앨범, 좋아요, 테마 플레이 리스트 CRUD
-+ 클라이언트 페이지 (ezenmusic.com)
-  + 메인 페이지 
-  + 둘러보기 페이지
-  + 곡 정보, 앨범 정보, 음악 정보, 아티스트 정보 페이지
-  + 검색 기능
-  + 플레이어 바
-  + 보관함(좋아요) 페이지
-  + 앨범, 플레이리스트, 아티스트 재생버튼 기능 구현
-    
-#### [임승렬]
-+ 관리자 페이지
-  + 클라이언트 정보 CRUD
-  + 관리자 로그인 기능 구현
-+ 클라이언트 페이지
-  + 로그인, 회원가입, 아이디/비밀번호 찾기 기능 구현
-  + 계정 별 캐릭터 생성
-  + 사용자의 취향에 맞게 아티스트 및 장르 선택 후 추천 음악 플레이리스트 제안 기능 구현
-  + 이용권 구매, 만료 처리
-  + 페이지 별 레이아웃 통일
- 
-#### [김건우]
-+ 관리자 페이지
-  + 플레이리스트 CRUD
-+ 클라이언트 페이지
-  + 보관함(플레이리스트) 페이지
-+ AWS
-  + nginx 설정 및 초기 배포
- 
-#### [이재호]
-+ 관리자 페이지
-  + 아티스트 CRUD
-+ 클라이언트 페이지
-  + 아티스트 정보 페이지
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+
+### 🙋‍♂️ 민병준 (팀장)
+- <b>관리자 페이지</b>  
+  - 앨범, 좋아요, 테마 플레이리스트 CRUD  
+- <b>클라이언트 페이지</b>
+  - 메인 페이지  
+  - 둘러보기 페이지  
+  - 곡 정보, 앨범 정보, 음악 정보, 아티스트 정보 페이지  
+  - 검색 기능  
+  - 플레이어 바  
+  - 보관함(좋아요) 페이지  
+  - 앨범, 플레이리스트, 아티스트 재생버튼 기능 구현  
+
+</td>
+    <td width="50%" valign="top">
+
+### 🙋‍♂️ 임승렬
+><b>FE</b>
+  - 메인 배너 UI
+  - 캐릭터 취향 설정 UI
+  - Styled-Components 를 통해 페이지 별 레이아웃, 스타일 통일화 작업   
+><b>BE</b>
+  - [관리자용 페이지]
+    - 관리자 페이지 로그인 기능 구현
+    - 회원 정보 관리 기능 구현
+  - [클라이언트 페이지]
+    - 로그인, 회원가입, 아이디/비밀번호 찾기 등 회원 관련 모든 API 구현  
+    - 계정 별 캐릭터 생성 기능 API
+    - 아티스트 및 장르 선택 후 추천 음악 플레이리스트 제안 기능 구현  
+    - 이용권 구매, 만료 처리 기능 API
+
+</td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+
+### 🙋‍♂️ 김건우
+- <b>관리자 페이지</b>  
+  - 플레이리스트 CRUD  
+- <b>클라이언트 페이지</b>  
+  - 보관함(플레이리스트) 페이지  
+- <b>AWS</b>  
+  - nginx 설정 및 초기 배포  
+
+</td>
+    <td width="50%" valign="top">
+
+### 🙋‍♂️ 이재호
+- <b>관리자 페이지</b>  
+  - 아티스트 CRUD  
+- <b>클라이언트 페이지</b>  
+  - 아티스트 정보 페이지  
+
+</td>
+  </tr>
+</table>
+
