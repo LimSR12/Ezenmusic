@@ -4,11 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon start!!",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js",   
+    "start": "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "LimSR12",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.1"
